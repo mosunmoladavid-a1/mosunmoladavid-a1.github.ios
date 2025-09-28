@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Dave Portfolio</title>
+    <link rel="stylesheet" href="porto/port.css" />
+    <style>
+        body {
+            background-color: #101010;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0;
+        }
+        .login-container {
+            background: #191919;
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(249, 0, 77, 0.5);
+            width: 350px;
+            color: white;
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 2px solid #f9004d;
+            border-radius: 30px;
+            background: #101010;
+            color: white;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        .login-container input[type="text"]:focus,
+        .login-container input[type="password"]:focus {
+            border-color: #ff0051;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 14px 0;
+            background-color: #f9004d;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.4s ease;
+        }
+        .login-container button:hover {
+            background-color: transparent;
+            border: 2px solid #f9004d;
+            color: #f9004d;
+        }
+        .login-container .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #f9004d;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .login-container .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+            <label for="username">Email or Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your email or username" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            <button type="submit"><a href="porto/hire.html">Log In</a></button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+    </div>
+</body>
+</html>
